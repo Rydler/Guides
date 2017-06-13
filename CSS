@@ -1,0 +1,8 @@
+Propiedades
+
+  * background: #000000;                        Define color de fondo
+  * color: #000000;                             Define color de texto
+  * font-family: nombre_fuente                  Define tipo de fuente
+  * font-size: tamaño;                          Define tamaño de la fuente
+  * border-bottom: dashed tamaño #000000;       Define lineas segmentadas despues de cada parrafo, por ejemplo. Se utiliza comunmente para la impresion de documentos
+  * display-none;                               Define deshabilitar funcionalidades o imagen, depende de la etiqueta donde se defina la propiedad
