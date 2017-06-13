@@ -1,8 +1,22 @@
 Propiedades
 
-  * background: #000000;                        Define color de fondo
-  * color: #000000;                             Define color de texto
-  * font-family: nombre_fuente                  Define tipo de fuente
-  * font-size: tamaño;                          Define tamaño de la fuente
-  * border-bottom: dashed tamaño #000000;       Define lineas segmentadas despues de cada parrafo, por ejemplo. Se utiliza comunmente para la impresion de documentos
+  * background: color;                          Define color de fondo
+  * border-bottom: dashed tamaño color;         Define lineas segmentadas despues de cada parrafo, por ejemplo. Se utiliza comunmente para la impresion de documentos
+  * border-color: color;                        Define el color del borde
+  * border-style: estilo;                       Define el estilo de borde
+  * border-width: valor;                        Define el ancho del borde
+  * color: color;                               Define color de texto
   * display-none;                               Define deshabilitar funcionalidades o imagen, depende de la etiqueta donde se defina la propiedad
+  * font-family: nombre_fuente                  Define tipo de fuente
+  * font-size: valor;                           Define tamaño de la fuente
+  * font-style: estilo_fuente;                  Define el estilo de fuente
+  * font-weigth: valor;                         Define el grosor de cada letra
+  * height: valor;                              Define la altura
+  * list-style-type;                            Define el marcador de los elementos de lista
+  * padding: valor;                             Define el relleno
+  * padding-top: valor;                         Define el relleno de la parte superior
+  * padding-bottom: valor;                      Define el relleno de la parte inferior
+  * padding-left: valor;                        Define el valor de la parte izquierda
+  * padding-right: valor;                       Define el valor de la parte derecha
+  * width: valor;                               Define la anchura
+  * 
