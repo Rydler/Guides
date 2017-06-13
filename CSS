@@ -1,4 +1,23 @@
-Propiedades
+PROPIEDADES
+
+tag{
+  TIPO_DE_ESTILO; 
+}
+
+CSS utlizando id:
+
+#ID{
+  TIPO_DE_ESTILO;
+}
+
+CSS utilizando Class
+
+.class{
+  TIPO_DE_ESTILO
+}
+
+
+TIPOS DE ESTILO
 
   * background: color;                          Define color de fondo
   * border-bottom: dashed tamaño color;         Define lineas segmentadas despues de cada parrafo, por ejemplo. Se utiliza comunmente para la impresion de documentos
