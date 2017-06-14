@@ -20,6 +20,7 @@ CSS utilizando Class
 TIPOS DE ESTILO
 
   * background: color;                          Define color de fondo
+  * background-image: url("");                  Define una imagen de fondo
   * border-bottom: dashed tamaño color;         Define lineas segmentadas despues de cada parrafo, por ejemplo. Se utiliza comunmente para la impresion de documentos
   * border-color: color;                        Define el color del borde
   * border-style: estilo;                       Define el estilo de borde
@@ -32,6 +33,11 @@ TIPOS DE ESTILO
   * font-weigth: valor;                         Define el grosor de cada letra
   * height: valor;                              Define la altura
   * list-style-type;                            Define el marcador de los elementos de lista
+  * margin: valor;                              Define el margen
+  * margin-top: valor;                          Define el margen superior
+  * margin-bottom: valor;                       Define el margen inferior
+  * margin-left: valor;                         Define el margen de la parte izquierda
+  * margin-right: valor;                        Define el margen de la parte derecha
   * padding: valor;                             Define el relleno
   * padding-top: valor;                         Define el relleno de la parte superior
   * padding-bottom: valor;                      Define el relleno de la parte inferior
