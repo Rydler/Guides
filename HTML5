@@ -1,5 +1,9 @@
 TAGS
 
-  * <div>
-      * <div id="ID_NAME">
-      * <div class="CLASS_NAME">
+  * <div>                                   Permite definir bloques de contenidos
+      * <div id="ID_NAME">                  Permite definir un id para el bloque de contenido de la etiqueta id
+      * <div class="CLASS_NAME">            Permite definir una clase para el bloque de contenido de la etiqueta id
+ * <head>                                   Define la cabecera del documento y contiene información del mismo (metadatos, script, estilos, ubicación de documentos de estilo, titulo de pagina
+ * <img src="anyImage.jpg">                 Define imagenes y su ruta                   
+ * <title>                                  Define el titulo de la pagina
+ * 
