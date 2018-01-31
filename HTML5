@@ -1,11 +1,14 @@
 TAGS
 
- * <div>                                    Permite definir bloques de contenidos
-      * <div id="ID_NAME">                  Permite definir un id para el bloque de contenido de la etiqueta id
-      * <div class="CLASS_NAME">            Permite definir una clase para el bloque de contenido de la etiqueta id
- * <head>                                   Define la cabecera del documento y contiene información del mismo (metadatos, script, estilos, ubicación de documentos de estilo, titulo de pagina
- * <img src="anyImage.jpg">                 Define imagenes y su ruta
- * <script>                                 Define los script
- * <style>                                  Define el estilo
- * <title>                                  Define el titulo de la pagina
- * 
+* <body>                                                        Define el cuerpo del documento y contiene informacion del mismo
+* <div>                                                         Permite definir bloques de contenidos
+     * <div id="ID_NAME">                                       Permite definir un id para el bloque de contenido de la etiqueta id
+     * <div class="CLASS_NAME">                                 Permite definir una clase para el bloque de contenido de la etiqueta id
+* <h1>                                                                
+* <head>                                                        Define la cabecera del documento y contiene información del mismo (metadatos, script, estilos, ubicación de documentos de estilo, titulo de pagina
+* <header>                                                      Define la cabecera de la pagina
+* <img src="anyImage.jpg" alt="">                               Define imagenes y su ruta
+* <link rel="" type="tipo" href="ruta/archivo.extension">       
+* <script>                                                      Define los script
+* <style>                                                       Define el estilo
+* <title>                                                       Define el titulo de la pagina
