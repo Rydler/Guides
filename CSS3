@@ -16,6 +16,9 @@ CSS utilizando Class
   TIPO_DE_ESTILO
 }
 
+PSEUDO-CLASSES
+
+  * :hover                                      Presente cuando el usuario coloca el puntero sobre algun elemento
 
 TIPOS DE ESTILO
 
@@ -43,5 +46,7 @@ TIPOS DE ESTILO
   * padding-bottom: valor;                      Define el relleno de la parte inferior
   * padding-left: valor;                        Define el valor de la parte izquierda
   * padding-right: valor;                       Define el valor de la parte derecha
+  * text-align: valor (center, left, right);    Define la alineacion del texto
+  * text-decoration: valor;                     Define la decoracion del texto, como por ejemplo el subrayado
   * width: valor;                               Define la anchura
   * 
