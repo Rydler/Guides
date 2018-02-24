@@ -1,7 +1,7 @@
 PROPIEDADES
 
 tag{
-  TIPO_DE_ESTILO; 
+  TIPO_DE_ESTILO;
 }
 
 CSS utlizando id:
@@ -49,4 +49,5 @@ TIPOS DE ESTILO
   * text-align: valor (center, left, right);    Define la alineacion del texto
   * text-decoration: valor;                     Define la decoracion del texto, como por ejemplo el subrayado
   * width: valor;                               Define la anchura
-  * 
+  * ESTO ES UNA PRUEBA
+  * ESTO ES OTRA PRUEBA
