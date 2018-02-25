@@ -1,8 +1,14 @@
 PROPIEDADES
 
-tag{
-  TIPO_DE_ESTILO;
-}
+* tag{TIPO_DE_ESTILO;}
+* display: inline;
+* display: inline-block;
+* text-decoration:
+    * text-decoration: underline;                       Subraya el texto
+    * text-decoration: underline dotted;                Subraya el texto mediante puntos
+    * text-decoration: underline dotted red;            Subraya el texto mediante puntos rojos
+    * text-decoration: green wavy underline;            Subraya el texto mediante olas verdes
+    * text-decoration: underline overline #FF3028;      Subraya el texto por arriba y abajo mediante un color definido
 
 CSS utlizando id:
 
@@ -30,6 +36,7 @@ TIPOS DE ESTILO
   * border-width: valor;                        Define el ancho del borde
   * color: color;                               Define color de texto
   * display-none;                               Define deshabilitar funcionalidades o imagen, depende de la etiqueta donde se defina la propiedad
+  * float: valor;                               Define que un elemento debe ponerse a lo largo del lado izquierdo o derecho de su contenedor
   * font-family: nombre_fuente                  Define tipo de fuente
   * font-size: valor;                           Define tamaño de la fuente
   * font-style: estilo_fuente;                  Define el estilo de fuente
@@ -49,5 +56,3 @@ TIPOS DE ESTILO
   * text-align: valor (center, left, right);    Define la alineacion del texto
   * text-decoration: valor;                     Define la decoracion del texto, como por ejemplo el subrayado
   * width: valor;                               Define la anchura
-  * ESTO ES UNA PRUEBA
-  * ESTO ES OTRA PRUEBA

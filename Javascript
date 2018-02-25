@@ -1,1 +1,5 @@
+OBJETOS
 
+* document                                      Permite acceder al nodo principal de un documento HTML
+    * document.getElementById()                 Retorna el elemento que tiene el atributo id con el valor especificado
+    
