@@ -2,4 +2,9 @@ OBJETOS
 
 * document                                      Permite acceder al nodo principal de un documento HTML
     * document.getElementById()                 Retorna el elemento que tiene el atributo id con el valor especificado
-    
+
+
+DOM element
+
+* element.innerHTML                             Permite Cambiar el contenido de un elemento <p> con id""
+* element.style.**                              Permite Acceder a los estilos del elemento
