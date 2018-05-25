@@ -8,7 +8,7 @@
 # CREATE
 
 * **db.createUser({user: 'user', pwd:'pwd', roles ['readWrite', 'dbAdmin']})** - Crea un usuario en la base de datos
-* **db.coleccion.insert(document)** - Inserta un documento en la coleccion
+* **db.coleccion.insert(`<document>`)** - Inserta un documento en la coleccion
 * **db.coleccion.insert([<document>,<document1>,....]) - Inserta uno o varios documentos tipo array a una coleccion
 * **db.coleccion.insertOne(<document>) - Inserta un documento en la coleccion, si la coleccion no existe la crea
 * **db.coleccion.insertMany([<document>,<document1>,...], {writeConcern: <document>,ordered: <boolean>}) - Inserta Varios Documentos dentro de una coleccion, el argumento ordered permite definir si el insert se detiene en caso de error (true) o sigue en caso de errores (false)
