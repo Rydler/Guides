@@ -1,1 +1,43 @@
-asdasdasd
+
+* show dbs                                                                                                    Muestra las bases de datos existentes
+* db                                                                                                          Muestra la base de datos a la que me encuentro conectado
+* use "Nombre_Base_Datos"                                                                                     Cambia a una base de datos existente, si esta no existe la crea temporalmente
+
+db.createUser({user: 'dmorales', pwd:'123', roles ['readWrite', 'dbAdmin']})                                  Crea un usuario en la base de datos
+
+CREATE
+
+db.coleccion.insert({campo: 'valor'})                                                                         Inserta un dato en una coleccion
+db.coleccion.insert([{campo: 'valor'},{campo: 'valor'},....])                                                 Inserta un dato tipo array a una coleccion
+
+READ
+
+db.coleccion.find()                                                                                           Consulta por todos los registros de una coleccion
+db.coleccion.find().count()                                                                                   consulta y devuelve el numero total de registros de una coleccion
+db.coleccion.find().pretty()                                                                                  Consulta y ordena de mejor manera todos los registros de una coleccion
+db.coleccion.find().sort({campo: 1})                                                                          Consulta y ordena de mayor a menor dado un campo
+db.coleccion.find().sort({campo: -1})                                                                         Consulta y ordena de menor a mayor dado un campo
+db.coleccion.findOne()                                                                                        Consulta y devuelve un documento
+db.coleccion.find().limit(numero)                                                                             Consulta por y devuelve la cantidad de registros de una coleccion dado en el limit
+db.coleccion.find({campo: 'valor'})                                                                           Consulta por el valor de un campo definido en la coleccion
+db.coleccion.find({"campo.subcampo": "valor"})                                                                Consulta por el valor de un campo de tipo objeto en la coleccion
+db.coleccion.find({campo: objetId("_id")})                                                                    Consulta por el valor del campo _id el cual es un objetId
+db.coleccion.find({$or: [{campo: "valor"}, {campo: "valor"},...])                                             Consulta por el valor de uno o varios campos usando el operador logico or
+db.coleccion.find({campo: {$gt: valor_numerico}})                                                             Consulta por un campo que devuelte todos los registros que sean mayor al valor dado
+db.coleccion.find({campo: {$lt: valor_numerico}})                                                             Consulta por un campo que devuelte todos los registros que sean menor al valor dado
+db.coleccion.find({campo: {$regex: 'expresion_regular'}})                                                     Consulta por un campo que devuelve un registro dado su expresion regular
+
+
+UPDATE
+
+db.coleccion.update({campo_busqueda: 'valor_busqueda'}, {campo: valor},....)                                  Consulta por un campo y actualiza los restantes
+db.coleccion.update({campo_busqueda: 'valor_busqueda'}, {campo: valor},..., {upsert: true})                   Consulta por un campo y actualiza los restantes, si el registro no existe lo crea
+db.coleccion.update({campo_busqueda: 'valor_busqueda'}, { $set: {campo: valor},...})                          Consulta por un campo y agrega un nuevo campo y valor
+db.coleccion.update({campo_busqueda: 'valor_busqueda'}, { $unset: {campo: 1},...})                            Consulta por un campo y elimina un campo segun su nombre
+db.coleccion.update({campo_busqueda: 'valor_busqueda'}, { $inc: {campo: valor},...})                          Consulta por un campo e incrementa otro campo especificado segun el valor
+db.coleccion.update({campo_busqueda: 'valor_busqueda'}, { $rename: {"campo": "campo_renombrado"}},....)       Consulta por un campo y renombra un campo dado por otro campo pasado como segundo parametro
+
+DELETE
+
+db.coleccion.remove({campo_busqueda: 'valor_busqueda'})                                                       Consulta por un campo y remueve el o los registros de la coleccion que coincida con la busqueda
+db.coleccion.remove({campo_busqueda: 'valor_busqueda'}, {justOne: true})                                      Consulta por un campo y remueve solo un registro de la coleccion que coincida con la busqueda
