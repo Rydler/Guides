@@ -7,21 +7,22 @@
 
 # CREATE
 
-* **db.createUser({user: 'user', pwd:'pwd', roles ['readWrite', 'dbAdmin']})** - Crea un usuario en la base de datos
-* **db.coleccion.insert(`<document>`)** - Inserta un documento en la coleccion
-* **db.coleccion.insert([<document>,<document1>,....]) - Inserta uno o varios documentos tipo array a una coleccion
-* **db.coleccion.insertOne(<document>) - Inserta un documento en la coleccion, si la coleccion no existe la crea
-* **db.coleccion.insertMany([<document>,<document1>,...], {writeConcern: <document>,ordered: <boolean>}) - Inserta Varios Documentos dentro de una coleccion, el argumento ordered permite definir si el insert se detiene en caso de error (true) o sigue en caso de errores (false)
+* **`db.createUser({user: 'user', pwd:'pwd', roles ['readWrite', 'dbAdmin']})`** - Crea un usuario en la base de datos
+* **`db.coleccion.insert(<document>)`** - Inserta un documento en la coleccion
+* **`db.coleccion.insert([<document>,<document1>,....])`** - Inserta uno o varios documentos tipo array a una coleccion
+* **`db.coleccion.insertOne(<document>)`** - Inserta un documento en la coleccion, si la coleccion no existe la crea
+* **`db.coleccion.insertMany([<document>,<document1>,...], {writeConcern: <document>,ordered: <boolean>})`** - Inserta Varios Documentos dentro de una coleccion, el argumento ordered permite definir si el insert se detiene en caso de error (true) o sigue en caso de errores (false)
 
-READ
 
-db.coleccion.find()                                                                                           Consulta por todos los registros de una coleccion
-db.coleccion.find().count()                                                                                   consulta y devuelve el numero total de registros de una coleccion
-db.coleccion.find().pretty()                                                                                  Consulta y ordena de mejor manera todos los registros de una coleccion
-db.coleccion.find().sort({campo: 1})                                                                          Consulta y ordena de mayor a menor dado un campo
-db.coleccion.find().sort({campo: -1})                                                                         Consulta y ordena de menor a mayor dado un campo
-db.coleccion.findOne()                                                                                        Consulta y devuelve un documento
-db.coleccion.find().limit(numero)                                                                             Consulta por y devuelve la cantidad de registros de una coleccion dado en el limit
+# READ
+
+* **`db.coleccion.find()`** - Consulta por todos los registros de una coleccion
+* **`db.coleccion.find().count()`** - consulta y devuelve el numero total de registros de una coleccion
+* **`db.coleccion.find().pretty()`** - Consulta y ordena de mejor manera todos los registros de una coleccion
+* **`db.coleccion.find().sort({campo: 1})`** - Consulta y ordena de mayor a menor dado un campo
+* **`db.coleccion.find().sort({campo: -1})`** - Consulta y ordena de menor a mayor dado un campo
+* **`db.coleccion.findOne()`** - Consulta y devuelve un documento
+* **`db.coleccion.find().limit(numero)`** - Consulta por y devuelve la cantidad de registros de una coleccion dado en el limit
 db.coleccion.find({campo: 'valor'})                                                                           Consulta por el valor de un campo definido en la coleccion
 db.coleccion.find({"campo.subcampo": "valor"})                                                                Consulta por el valor de un campo de tipo objeto en la coleccion
 db.coleccion.find({'campo.N': "valor"})                                                                       consulta por el valor de un campo de tipo objeto en una posicion relativa, donde N es la posicion relativa del arreglo
