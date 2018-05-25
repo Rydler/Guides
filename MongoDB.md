@@ -1,11 +1,8 @@
 # UTILIDADES
 
-
-* show dbs - Muestra las bases de datos existentes
-
-* db - Muestra la base de datos a la que me encuentro conectado
-* use "Nombre_Base_Datos" - Cambia a una base de datos existente, si esta no existe la crea temporalmente
-
+* **db** - Muestra la base de datos a la que me encuentro conectado
+* **show dbs** - Muestra las bases de datos existentes
+* **use "Nombre_Base_Datos"** - Cambia a una base de datos existente, si esta no existe la crea temporalmente
 
 
 # CREATE
