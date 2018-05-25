@@ -1,12 +1,16 @@
+# UTILIDADES
 
-* show dbs                                                                                                    Muestra las bases de datos existentes
-* db                                                                                                          Muestra la base de datos a la que me encuentro conectado
-* use "Nombre_Base_Datos"                                                                                     Cambia a una base de datos existente, si esta no existe la crea temporalmente
+
+* show dbs - Muestra las bases de datos existentes
+
+* db - Muestra la base de datos a la que me encuentro conectado
+* use "Nombre_Base_Datos" - Cambia a una base de datos existente, si esta no existe la crea temporalmente
+
+
+
+# CREATE
 
 db.createUser({user: 'dmorales', pwd:'123', roles ['readWrite', 'dbAdmin']})                                  Crea un usuario en la base de datos
-
-CREATE
-
 db.coleccion.insert(<document>)                                                                               Inserta un documento en la coleccion
 db.coleccion.insert([<document>,<document1>,....])                                                            Inserta uno o varios documentos tipo array a una coleccion
 db.coleccion.insertOne(<document>);                                                                           Inserta un documento en la coleccion, si la coleccion no existe la crea
