@@ -23,15 +23,15 @@
 * **`db.coleccion.find().sort({campo: -1})`** - Consulta y ordena de menor a mayor dado un campo
 * **`db.coleccion.findOne()`** - Consulta y devuelve un documento
 * **`db.coleccion.find().limit(numero)`** - Consulta por y devuelve la cantidad de registros de una coleccion dado en el limit
-db.coleccion.find({campo: 'valor'})                                                                           Consulta por el valor de un campo definido en la coleccion
-db.coleccion.find({"campo.subcampo": "valor"})                                                                Consulta por el valor de un campo de tipo objeto en la coleccion
-db.coleccion.find({'campo.N': "valor"})                                                                       consulta por el valor de un campo de tipo objeto en una posicion relativa, donde N es la posicion relativa del arreglo
-db.coleccion.find({campo: objetId("_id")})                                                                    Consulta por el valor del campo _id el cual es un objetId
-db.coleccion.find({$or: [{campo: "valor"}, {campo: "valor"},...])                                             Consulta por el valor de uno o varios campos usando el operador logico or
-db.coleccion.find({campo: {$in: "valor1","valor2",...}})                                                      Consulta por los valores de un campo dado, si alguno conincide con el criterio devuelve el o los resultados
-db.coleccion.find({campo: {$gt: valor_numerico}})                                                             Consulta por un campo que devuelte todos los registros que sean mayor al valor dado
-db.coleccion.find({campo: {$lt: valor_numerico}})                                                             Consulta por un campo que devuelte todos los registros que sean menor al valor dado
-db.coleccion.find({campo: {$regex: 'expresion_regular'}})                                                     Consulta por un campo que devuelve un registro dado su expresion regular
+* **`db.coleccion.find({campo: 'valor'})`** Consulta por el valor de un campo definido en la coleccion
+* **`db.coleccion.find({"campo.subcampo": "valor"})`** Consulta por el valor de un campo de tipo objeto en la coleccion
+* **`db.coleccion.find({'campo.N': "valor"})`** Consulta por el valor de un campo de tipo objeto en una posicion relativa, donde N es la posicion relativa del arreglo
+* **`db.coleccion.find({campo: objetId("_id")})`** Consulta por el valor del campo _id el cual es un objetId
+* **`db.coleccion.find({$or: [{campo: "valor"}, {campo: "valor"},...])`** Consulta por el valor de uno o varios campos usando el operador logico or
+* **`db.coleccion.find({campo: {$in: "valor1","valor2",...}})`** Consulta por los valores de un campo dado, si alguno conincide con el criterio devuelve el o los resultados
+* **`db.coleccion.find({campo: {$gt: valor_numerico}})`** Consulta por un campo que devuelte todos los registros que sean mayor al valor dado
+* **`db.coleccion.find({campo: {$lt: valor_numerico}})`** Consulta por un campo que devuelte todos los registros que sean menor al valor dado
+* **`db.coleccion.find({campo: {$regex: 'expresion_regular'}})`** Consulta por un campo que devuelve un registro dado su expresion regular
 
 
 UPDATE
