@@ -34,7 +34,7 @@
 * **`db.coleccion.find({campo: {$regex: 'expresion_regular'}})`** Consulta por un campo que devuelve un registro dado su expresion regular
 
 
-UPDATE
+# UPDATE
 
 * **`db.collection.updateOne(<filtro>, <update>{<document>})`** Consulta mediante un filtro y luego ejecuta la actualizacion de los campos inidicados en un solo documento
 * **`db.coleccion.update({campo_busqueda: 'valor_busqueda'}, {campo: valor},....)`** Consulta por un campo y actualiza los restantes
@@ -44,14 +44,14 @@ UPDATE
 * **`db.coleccion.update({campo_busqueda: 'valor_busqueda'}, { $inc: {campo: valor},...})`** Consulta por un campo e incrementa otro campo especificado segun el valor
 * **`db.coleccion.update({campo_busqueda: 'valor_busqueda'}, { $rename: {"campo": "campo_renombrado"}},....)`** Consulta por un campo y renombra un campo dado por otro campo pasado como segundo parametro
 
-DELETE
+# DELETE
 
 * **`db.coleccion.remove({campo_busqueda: 'valor_busqueda'})`** Consulta por un campo y remueve el o los registros de la coleccion que coincida con la busqueda
 * **`db.coleccion.remove({campo_busqueda: 'valor_busqueda'}, {justOne: true})`** Consulta por un campo y remueve solo un registro de la coleccion que coincida con la busqueda
 
 
-Aggregation Framework Pippeline
+# Aggregation Framework Pippeline
 
-db.coleccion.aggregate([{ $match: {....} }])                                                                  Funciona como el equivalente a un where en una consula SQL
-db.coleccion.aggregate([{ $project: {...} }])                                                                 Funciona como el equivalnte a un select en una consulta SQL
-db.coleccion.aggregate([{ $addFields: { <newField>: <expression>, ... } }])                                   Funciona similar a un $project, permite adicionar campos
+* **`db.coleccion.aggregate([{ $match: {....} }])`** Funciona como el equivalente a un where en una consula SQL
+* **`db.coleccion.aggregate([{ $project: {...} }])`** Funciona como el equivalnte a un select en una consulta SQL
+* **`db.coleccion.aggregate([{ $addFields: { <newField>: <expression>, ... } }])`** Funciona similar a un $project, permite adicionar campos
