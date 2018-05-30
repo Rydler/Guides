@@ -51,6 +51,7 @@
 
 # OPERADORES
 
+* **`$all --> { <field>: { $all: [ <value1> , <value2> ... ] } }`** busca documentos que contengan todos los value especificados para un field
 * **`$and --> { $and: [ { <expression1> }, { <expression2> } , ... , { <expressionN> } ] }`** utiliza el operador logico and
 * **`$exist --> { field: { $exists: <boolean> } }`** Valida si el campo field existe utilizando un boolean
 * **`$gt --> {field: {$gt: value} }`** greater than o mayor que
@@ -60,6 +61,7 @@
 * **`$lte --> {field: {$lte: value} }`** less than equal o menor o igual que
 * **`$ne --> {field: {$ne: value} }`** not equal o no igual
 * **`$or --> { $or: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }`** utiliza el operadorlogico or
+* **`$size --> { $size: <expression> }`** cuenta y retorna el total de elementos de un arreglo
 * **`$type --> { field: { $type: <BSON type> } }`** Valida que el field sea de un tipo de dato determinado BSON type
 * **`$type --> { field: { $type: [ <BSON type1> , <BSON type2>, ... ] } }`** valida que el field sea de uno o varios tipos de datos determinadosen el array de BSON type
 
