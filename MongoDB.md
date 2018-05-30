@@ -51,12 +51,14 @@
 
 # OPERADORES
 
+* **`$exist --> { field: { $exists: <boolean> } }`** Valida si el campo field existe utilizando un boolean
 * **`$gt --> {field: {$gt: value} }`** greater than o mayor que
 * **`$gte --> {field: {$gte: value} }`** greater than equal o mayor o igual que
 * **`$in --> { field: { $in: [<value1>, <value2>, ... <valueN> ] } }`** Compara varios valores dentro de una matriz
 * **`$lt --> {field: {$lt: value} }`** less than o menor que
 * **`$lte --> {field: {$lte: value} }`** less than equal o menor o igual que
 * **`$ne --> {field: {$ne: value} }`** not equal o no igual
+* **`$type --> { field: { $type: <BSON type> } }`** Valida que el field sea de un tipo de dato determinado BSON type
 
 
 # Aggregation Framework Pippeline
