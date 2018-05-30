@@ -49,6 +49,12 @@
 * **`db.coleccion.remove({campo_busqueda: 'valor_busqueda'})`** Consulta por un campo y remueve el o los registros de la coleccion que coincida con la busqueda
 * **`db.coleccion.remove({campo_busqueda: 'valor_busqueda'}, {justOne: true})`** Consulta por un campo y remueve solo un registro de la coleccion que coincida con la busqueda
 
+# OPERADORES
+
+* **`$gt --> {field: {$gt: value} }`** greater than o mayor que
+* **`$gte --> {field: {$gte: value} }`** greater than equal o mayor o igual que
+* **`$lt --> {field: {$lt: value} }`** less than o menor que
+* **`$lte --> {field: {$lte: value} }`** less than equal o menor o igual que
 
 # Aggregation Framework Pippeline
 
