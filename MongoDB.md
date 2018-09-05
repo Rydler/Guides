@@ -3,6 +3,7 @@
 * **`db`** - Muestra la base de datos a la que me encuentro conectado
 * **`show dbs`** - Muestra las bases de datos existentes
 * **`use "Nombre_Base_Datos"`** - Cambia a una base de datos existente, si esta no existe la crea temporalmente
+* **`mongodump -h host -u usuario -p passsword --authenticationDatabase base_datos -d base_datos -o dir`** - Respalda la base de datos.
 
 
 # CREATE
