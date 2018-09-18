@@ -1,5 +1,15 @@
 # MODULOS
 
+* **`os`** - Modulo que proporciona una forma portatil de utilizar la funcionalidad dependiente del sistema operativo
+
+<code>os.chdir(path)</code> : Cambia el directorio de trabajo actual al path especificado.
+
+<code>os.getcwd</code> : Devuelve una cadena que representa el directorio del trabajo actual
+
+<code>os.listdir(path)</code> : Devuelve una lista que contiene los nombres de las entradas en el directorio indicado por esa path. La lista esta en orden arbitrario.
+
+<code>os.rename(src, dst)</code> : Cambia el nombre del archivo o directorio **src** a **dst**.
+
 * **`time`** - Modulo que proporciona funcionalidades realcionadas con el tiempo
 
 <code>time.sleep(secs)</code> : Suspende la ejecucion del hilo actual durante el numero de segundos especificados. el argunmento puede ser un nuemero de coma flotante para indicar un tiempo de suspension mas preciso.
