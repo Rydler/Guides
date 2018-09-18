@@ -1,7 +1,8 @@
 # MODULOS
 
 * **`webbrowser`** - Permite inicializar el browser pasando como parametro cualquier URL
-  **'webbrowser.open'** - 
+
+<code>webbrowser.open</code> 
 
 
 # LOOPS
