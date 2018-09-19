@@ -56,6 +56,7 @@
 
 * **`$all --> { <field>: { $all: [ <value1> , <value2> ... ] } }`** busca documentos que contengan todos los value especificados para un field
 * **`$and --> { $and: [ { <expression1> }, { <expression2> } , ... , { <expressionN> } ] }`** utiliza el operador logico and
+* **`$count --> { $count: <string> }`**: Devuelve un documento que contiene un recuento de la cantidad de documentos ingresados en el escenario.
 * **`$exist --> { field: { $exists: <boolean> } }`** Valida si el campo field existe utilizando un boolean
 * **`$gt --> {field: {$gt: value} }`** greater than o mayor que
 * **`$gte --> {field: {$gte: value} }`** greater than equal o mayor o igual que
