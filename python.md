@@ -1,6 +1,9 @@
 # MODULOS
 
-* **`os`** - Modulo que proporciona una forma portatil de utilizar la funcionalidad dependiente del sistema operativo
+
+##### os  - Modulo que proporciona una forma portatil de utilizar la funcionalidad dependiente del sistema operativo
+
+####  METODOS
 
 <code>os.chdir(path)</code> : Cambia el directorio de trabajo actual al path especificado.
 
@@ -10,13 +13,17 @@
 
 <code>os.rename(src, dst)</code> : Cambia el nombre del archivo o directorio **src** a **dst**.
 
-* **`time`** - Modulo que proporciona funcionalidades realcionadas con el tiempo
+##### time - Modulo que proporciona funcionalidades realcionadas con el tiempo
+
+#### METODOS
 
 <code>time.sleep(secs)</code> : Suspende la ejecucion del hilo actual durante el numero de segundos especificados. el argunmento puede ser un nuemero de coma flotante para indicar un tiempo de suspension mas preciso.
 
 <code>time.ctime()</code> : 
 
-* **`turtle`** - Modulo que permite dibujar e introducir la programacion en los niños. Era parte del lenguaje de programación Logo original, desarrollado por Wally Feurzig y Seymour Papert en 1966.
+##### turtle - Modulo que permite dibujar e introducir la programacion en los niños. Era parte del lenguaje de programación Logo original, desarrollado por Wally Feurzig y Seymour Papert en 1966.
+
+#### METODOS
 
 <code>turtle.bgcolor(*args)</code> : Permite cambiar el color de fondo de la pantalla. 
 
@@ -30,10 +37,13 @@
 
 <code>turtle.speed(speed=None)</code> : Limita la velocidad con la cual se mueve la tortuga.
 
-* **`webbrowser`** - Permite inicializar el browser pasando como parametro cualquier URL
+##### webbrowser - Permite inicializar el browser pasando como parametro cualquier URL
+
+#### METODOS
 
 <code>webbrowser.open(url, new=0, autoraise=True)</code> : Muestra la URL usando el navegador predeterminado. Si **new** es 0, la url se abre en la misma ventana del navegador si es posible. Si **new** es 1, se abre una nueva ventana del navegar si es posible. Si **new** es 2 se abre una pestaña del navegador. Si **autoraise** es True, la ventana del navegador se levanta de ser posible.
 
+***
 
 # LOOPS
 
