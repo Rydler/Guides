@@ -50,7 +50,9 @@
 * **`db.coleccion.remove({campo_busqueda: 'valor_busqueda'})`** Consulta por un campo y remueve el o los registros de la coleccion que coincida con la busqueda
 * **`db.coleccion.remove({campo_busqueda: 'valor_busqueda'}, {justOne: true})`** Consulta por un campo y remueve solo un registro de la coleccion que coincida con la busqueda
 
-# OPERADORES
+***
+
+# QUERY OPERATOR
 
 * **`$all --> { <field>: { $all: [ <value1> , <value2> ... ] } }`** busca documentos que contengan todos los value especificados para un field
 * **`$and --> { $and: [ { <expression1> }, { <expression2> } , ... , { <expressionN> } ] }`** utiliza el operador logico and
