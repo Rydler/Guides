@@ -54,4 +54,5 @@
 
 # LOOPS
 
-* **`while`** - 
+##### while condition:
+##### for value in variable:
