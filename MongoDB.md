@@ -81,4 +81,7 @@
 * **`db.coleccion.aggregate([{ $match: {....} }])`** Funciona como el equivalente a un where en una consula SQL
 * **`db.coleccion.aggregate([{ $project: {...} }])`** Funciona como el equivalnte a un select en una consulta SQL
 * **`db.coleccion.aggregate([{ $addFields: { <newField>: <expression>, ... } }])`** Funciona similar a un $project, permite adicionar campos
-* **`db.coleccion.aggregate([{ $limit: <positive integer> }`** Limita la cantidad de documentos que pasan a la siguiente etapa del Pipeline
+* **`db.coleccion.aggregate([{ $limit: <positive integer> }])`** Limita la cantidad de documentos que pasan a la siguiente etapa del Pipeline
+* **`db.coleccion.aggregate([{ $skip: <positive integer> }])`** Se salta la cantidad especificada de documentospasados en el stage y pasa los documentos restantes a la siguiente etapa del Pipeline
+* **`db.coleccion.aggregate([{ $count: <string> }])`** Devuelve un documento que contiene un recuento de la cantidad de documentos ingresados en el Stage
+* **`db.coleccion.aggregate([{ $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }])`** Ordena todos los documentos de entrada y los devuelve al Pipeline en el orden especificado
