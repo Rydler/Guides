@@ -68,6 +68,7 @@
 * **`$nin --> { field: { $nin: [ <value1>, <value2> ... <valueN> ]} }`** not include o no incluye
 * **`$or --> { $or: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }`** utiliza el operadorlogico or
 * **`$size --> { $size: <expression> }`** cuenta y retorna el total de elementos de un arreglo
+* **`$split --> { $split: [ <string expression>, <delimiter> ] }`** Divide un String dentro de un arreglo de substring basado en un delimitador. **$split** elimina el delimitador y devuelve como resultado los substring como elementos en el arreglo. Si el delimitador no se encuatra en el String **$split** devuelve el string original como unico elemento del arreglo.
 * **`$type --> { field: { $type: <BSON type> } }`** Valida que el field sea de un tipo de dato determinado BSON type
 * **`$type --> { field: { $type: [ <BSON type1> , <BSON type2>, ... ] } }`** valida que el field sea de uno o varios tipos de datos determinadosen el array de BSON type
 
