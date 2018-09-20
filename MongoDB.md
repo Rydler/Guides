@@ -64,6 +64,7 @@
 * **`$in --> { field: { $in: [<value1>, <value2>, ... <valueN> ] } }`** incude compara varios valores dentro de una matriz
 * **`$lt --> {field: {$lt: value} }`** less than o menor que
 * **`$lte --> {field: {$lte: value} }`** less than equal o menor o igual que
+* **`$map --> { $map: { input: <expression>, as: <string>, in: <expression> } }`** Aplica una expresion a cada elemento dentro de una matriz con los resultados aplicados.
 * **`$ne --> {field: {$ne: value} }`** not equal o no igual
 * **`$nin --> { field: { $nin: [ <value1>, <value2> ... <valueN> ]} }`** not include o no incluye
 * **`$or --> { $or: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }`** utiliza el operadorlogico or
