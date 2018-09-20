@@ -76,8 +76,9 @@
 
 ***
 
-# Aggregation Framework Pippeline
+# AGGREGATION FRAMEWORK PIPPELINE
 
 * **`db.coleccion.aggregate([{ $match: {....} }])`** Funciona como el equivalente a un where en una consula SQL
 * **`db.coleccion.aggregate([{ $project: {...} }])`** Funciona como el equivalnte a un select en una consulta SQL
 * **`db.coleccion.aggregate([{ $addFields: { <newField>: <expression>, ... } }])`** Funciona similar a un $project, permite adicionar campos
+* **`db.coleccion.aggregate([{ $limit: <positive integer> }`** Limita la cantidad de documentos que pasan a la siguiente etapa del Pipeline
