@@ -76,6 +76,12 @@
 
 ***
 
+# AGGREGATION PIPPELINE OPERATOR
+
+* **`$avg --> { $avg: <expression> }`** Devuelve el valor promedio de los valores numericos
+
+***
+
 # AGGREGATION FRAMEWORK PIPPELINE
 
 * **`db.coleccion.aggregate([{ $match: {....} }])`** Funciona como el equivalente a un where en una consula SQL
