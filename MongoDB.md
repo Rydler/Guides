@@ -84,4 +84,5 @@
 * **`db.coleccion.aggregate([{ $limit: <positive integer> }])`** Limita la cantidad de documentos que pasan a la siguiente etapa del Pipeline
 * **`db.coleccion.aggregate([{ $skip: <positive integer> }])`** Se salta la cantidad especificada de documentospasados en el stage y pasa los documentos restantes a la siguiente etapa del Pipeline
 * **`db.coleccion.aggregate([{ $count: <string> }])`** Devuelve un documento que contiene un recuento de la cantidad de documentos ingresados en el Stage
+* **`db.coleccion.aggregate({ $sample: { size: <positive integer> } })`** Selecciona aleatoriamente una muestra de docuemntos segun el numero entregado en la consulta.
 * **`db.coleccion.aggregate([{ $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }])`** Ordena todos los documentos de entrada y los devuelve al Pipeline en el orden especificado
