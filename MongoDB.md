@@ -79,6 +79,7 @@
 # AGGREGATION PIPPELINE OPERATOR
 
 * **`$avg --> { $avg: <expression> }`** Devuelve el valor promedio de los valores numericos
+* **`$multiply --> { $multiply: [ <expression1>, <expression2>, ... ] }`** Multiplica números juntos y devuelve el resultado. 
 
 ***
 
