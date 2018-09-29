@@ -78,7 +78,8 @@
 
 # AGGREGATION PIPPELINE OPERATOR
 
-* **`$avg --> { $avg: <expression> }`** Devuelve el valor promedio de los valores numericos
+* **`$avg --> { $avg: <expression> }`** Devuelve el valor promedio de los valores numericos.
+* **`$cond --> { $cond: [ <boolean-expression>, <true-case>, <false-case> ] }`** Evalúa una expresión booleana para devolver una de las dos expresiones de retorno especificadas.
 * **`$divide --> { $divide: [ <expression1>, <expression2> ] }`** Divide un número por otro y devuelve el resultado. Pase los argumentos a $ divide en una matriz.
 * **`$multiply --> { $multiply: [ <expression1>, <expression2>, ... ] }`** Multiplica números juntos y devuelve el resultado. 
 
