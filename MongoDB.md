@@ -82,8 +82,11 @@
 * **`$cond --> { $cond: [ <boolean-expression>, <true-case>, <false-case> ] }`** Evalúa una expresión booleana para devolver una de las dos expresiones de retorno especificadas.
 * **`$divide --> { $divide: [ <expression1>, <expression2> ] }`** Divide un número por otro y devuelve el resultado. Pase los argumentos a $ divide en una matriz.
 * **`$isArray --> { $isArray: [ <expression> ] }`** Determina si el operando es un array. Devuelve un valor booleano.
+* **`$max --> { $max: <expression> }`** Retorna el valor maximo. **$max** compara tanto el valor como el tipo.
 * **`$multiply --> { $multiply: [ <expression1>, <expression2>, ... ] }`** Multiplica números juntos y devuelve el resultado.
+* **`$reduce --> { $reduce: { input: <array>, initialValue: <expression>, in: <expression> }}`** Aplica una expresión a cada elemento en un Array y los combina en un solo valor.
 * **`$sum --> { $sum: <expression> }`** Calcula y devuelve la suma de los valores numéricos. $sum ignora los valores no numericos.
+
 
 ***
 
