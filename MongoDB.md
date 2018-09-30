@@ -86,12 +86,13 @@
 * **`$min --> { $min: <expression> }`** Retorna el valor minimo. **$min** compara tanto el valor como el tipo.
 * **`$multiply --> { $multiply: [ <expression1>, <expression2>, ... ] }`** Multiplica números juntos y devuelve el resultado.
 * **`$reduce --> { $reduce: { input: <array>, initialValue: <expression>, in: <expression> }}`** Aplica una expresión a cada elemento en un Array y los combina en un solo valor.
+* **`$stdDevSamp --> { $stdDevSamp: [ <expression1>, <expression2> ... ]  }`** Calcula la desviacion estandar de la muestra de valores de entrada.
 * **`$sum --> { $sum: <expression> }`** Calcula y devuelve la suma de los valores numéricos. $sum ignora los valores no numericos.
 
 
 ***
 
-# AGGREGATION FRAMEWORK STAGES
+# AGGREGATION PIPELINE STAGES
 
 * **`{ $addFields: { <newField>: <expression>, ... } }`** Funciona similar a un $project, permite adicionar campos.
 * **`{ $count: <string> }`** Devuelve un documento que contiene un recuento de la cantidad de documentos ingresados en el Stage. 
@@ -102,3 +103,4 @@
 * **`{ $sample: { size: <positive integer> } }`** Selecciona aleatoriamente una muestra de docuemntos segun el numero entregado en la consulta.
 * **`{ $skip: <positive integer> }`** Se salta la cantidad especificada de documentospasados en el stage y pasa los documentos restantes a la siguiente etapa del Pipeline
 * **`{ $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }`** Ordena todos los documentos de entrada y los devuelve al Pipeline en el orden especificado
+* **`{ $unwind: { $unwind: <field path> }`** Descontruye un campo de arreglo de los documentos de entrada para generar un documento para cada elemento.
