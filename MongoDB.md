@@ -52,7 +52,7 @@
 
 ***
 
-# QUERY OPERATOR
+# QUERY OPERATORS
 
 * **`$all --> { <field>: { $all: [ <value1> , <value2> ... ] } }`** busca documentos que contengan todos los value especificados para un field
 * **`$and --> { $and: [ { <expression1> }, { <expression2> } , ... , { <expressionN> } ] }`** utiliza el operador logico and
@@ -73,6 +73,12 @@
 * **`$split --> { $split: [ <string expression>, <delimiter> ] }`** Divide un String dentro de un arreglo de substring basado en un delimitador. **$split** elimina el delimitador y devuelve como resultado los substring como elementos en el arreglo. Si el delimitador no se encuatra en el String **$split** devuelve el string original como unico elemento del arreglo.
 * **`$type --> { field: { $type: <BSON type> } }`** Valida que el field sea de un tipo de dato determinado BSON type
 * **`$type --> { field: { $type: [ <BSON type1> , <BSON type2>, ... ] } }`** valida que el field sea de uno o varios tipos de datos determinadosen el array de BSON type
+
+***
+
+# EVALUATION QUERY OPERATORS
+
+* **`$text --> {$text:{$search: <string>,$language: <string>,$caseSensitive: <boolean>,$diacriticSensitive: <boolean>}}`** Realiza una busqueda de texto en el contenido de los campos indexados con un indice de texto.
 
 ***
 
@@ -102,5 +108,6 @@
 * **`{ $project: {...} }`** Funciona como el equivalnte a un select en una consulta SQL
 * **`{ $sample: { size: <positive integer> } }`** Selecciona aleatoriamente una muestra de docuemntos segun el numero entregado en la consulta.
 * **`{ $skip: <positive integer> }`** Se salta la cantidad especificada de documentospasados en el stage y pasa los documentos restantes a la siguiente etapa del Pipeline
-* **`{ $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }`** Ordena todos los documentos de entrada y los devuelve al Pipeline en el orden especificado
+* **`{ $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }`** Ordena todos los documentos de entrada y los devuelve al Pipeline en el orden especificado.
+* **`{ $sortByCount:  <expression> }`** Agrupa los documentos entrantes según el valor de una expresión específica y luego calcula el recuento de documentos en cada grupo distinto.
 * **`{ $unwind: { $unwind: <field path> }`** Descontruye un campo de arreglo de los documentos de entrada para generar un documento para cada elemento.
